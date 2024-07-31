@@ -1,0 +1,29 @@
+<div id="web">
+  <h1>{{words}}</h1>
+  <input type="text" [(ngModel)] ="input">
+  <div id="timepoint">
+    <h2>{{time}} giây</h2>
+    <h2>điểm hiện tại :{{point}}</h2>
+  </div>
+  <button id="start" (click)="startTimer()">Start</button>
+  <div id="keyboard">
+    @for (row of keyboards; track $index) {
+      @if ($index == 0) {
+        <div id="top">
+          @for (letter of row.top; track $index) {
+            <button id="{{letter}}">{{letter}}</button>
+          }
+        </div>} @else if ($index == 1 ) {
+        <div id="middle">
+          @for (letter of row.middle; track $index) {
+            <button id="{{letter}}">{{letter}}</button>
+          }</div>
+        }@else {
+        <div id="bottom">
+          @for (letter of row.bottom; track $index) {
+            <button id="{{letter}}">{{letter}}</button>
+          }</div>
+        }
+    }
+    </div>
+</div>

@@ -1,0 +1,73 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+#web{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 735px;
+    background-image: linear-gradient(to bottom right, #008cba, #b446fc)
+}
+#web h1{
+    color: white;
+    font-size: 48px;
+    margin: 20px 0;
+}
+#start{
+    width: 15%;
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 10px 5px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+#start:hover{
+    background-color: #008CBA;
+    color: white;
+}
+#timepoint{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 50%;
+    color: white;
+}
+input{
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #008CBA;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+#keyboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#keyboard button{
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 8px 6px;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
